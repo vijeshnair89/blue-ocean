@@ -2,6 +2,7 @@ pipeline {
   agent any
   stages {
     stage('fetch') {
+      agent any
       steps {
         git(url: 'git@github.com:vijeshnair89/blue-ocean.git', branch: 'main')
       }
