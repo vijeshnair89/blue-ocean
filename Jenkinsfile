@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('fetch') {
       steps {
-        git(url: 'git@github.com:vijeshnair89/blue-ocean.git', branch: 'main')
+        git(url: 'git@github.com:vijeshnair89/blue-ocean.git', branch: '*/main')
       }
     }
 
